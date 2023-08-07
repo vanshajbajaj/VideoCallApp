@@ -1,0 +1,198 @@
+#lobbymain {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 76vh;
+    /* border:1px solid red; */
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+#lbmleft {
+
+    width: 50%;
+    height: 90%;
+    /* border: 1px solid red; */
+    box-shadow: 0px 0px 4px 2px rgba(104, 104, 104, 0.445);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 106, 106, 0.21);
+    animation: shadoww 0.75s alternate-reverse 0s infinite ease-in-out;
+
+}
+
+#lbmright {
+
+    height: 90%;
+    width: 38%;
+    /* border: 1px solid red; */
+    box-shadow: 0px 0px 4px 2px rgba(104, 104, 104, 0.445);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 106, 106, 0.21);
+    animation: shadoww 0.75s alternate-reverse 0s infinite ease-in-out;
+
+}
+
+@keyframes shadoww {
+
+    0%{
+        box-shadow: 0px 0px 4px 2px rgba(104, 104, 104, 0.445);
+    }
+    100%{
+        box-shadow: 0px 0px 5px 3px rgba(134, 134, 134, 0.505);
+    }
+    /* 100%{
+        box-shadow: 0px 0px 4px 2px rgba(104, 104, 104, 0.445);
+    } */
+    
+}
+
+#lbmlogo {
+
+    background: -webkit-linear-gradient(left, rgb(118, 13, 167), rgb(7, 128, 168), rgb(25, 25, 171));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+
+}
+
+.lbminfo {
+
+    width: 80%;
+    /* border: 1px solid blue; */
+    height: 10%;
+    margin-top: 15px;
+    /* text-align: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.938);
+    background: -webkit-linear-gradient(left, rgb(118, 13, 167), rgb(7, 128, 168), rgb(25, 25, 171));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.lbmdesc {
+
+    width: 80%;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.749);
+
+}
+
+.lbrhead {
+
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.884);
+
+}
+
+#lbrform {
+
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.lbrinp {
+
+    height: 25%;
+    width: 68%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.749);
+
+}
+
+.lbrinpinp {
+
+    width: 60%;
+    height: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(198, 198, 198, 0.304);
+    color: white;
+    text-align: center;
+
+}
+
+#lbrbt {
+
+    width: 30%;
+    height: 12%;
+    border: 0;
+    color: white;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.34);
+    background-color: rgba(179, 179, 179, 0.331);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    animation: shadoww 0.75s alternate-reverse 0s infinite ease-in-out;
+
+}
+
+#lbrbt:hover{
+
+    box-shadow: 0px 0px 2px 1.5px rgba(255, 255, 255, 0.479);
+
+}
+
+@media (max-width: 800px) {
+    #lobbymain {
+      flex-direction: column;
+      height:auto;
+      font-size: 14px;
+    }
+    #lbmlogo{
+        font-size:20px;
+    }
+    .lbrhead{
+        font-size: 20px;
+    }
+    .lbrinp{
+        font-size: 14px;
+        width:80%;
+    }
+    #lbrbt{
+        font-size: 12px;
+        width:60%;
+    }
+    #lbmleft{
+        margin-top:10px;
+        width:80%;
+    }
+    #lbmright{
+        width:60%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height:200px;
+    }
+  }

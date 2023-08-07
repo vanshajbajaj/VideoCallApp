@@ -1,0 +1,81 @@
+#ftdiv {
+
+    width: 98.5%;
+    height: 6vh;
+    /* border:1px solid red; */
+    background-color: rgba(167, 167, 183, 0.226);
+    border-radius: 15px;
+    margin-top: 10px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 4px 2px #74747452;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.ftside {
+
+    height: 100%;
+    width: 20%;
+    color: rgba(255, 255, 255, 0.648);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ftside2 {
+
+    height: 100%;
+    width: 12%;
+    margin-right: 4%;
+    color: rgba(255, 255, 255, 0.648);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+}
+
+#ftmid {
+
+    width: 25%;
+    color: rgba(255, 255, 255, 0.648);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.628);
+    font-size: 18px;
+    margin: 10%;
+}
+
+@media (max-width: 800px) {
+
+    #ftdiv{
+        margin-top:12vh;
+    }
+
+    .ftside2{
+        width:30%;
+        font-size: 10px;
+    }
+
+    .ftside1{
+        width:30%;
+        font-size: 10px;
+    }
+
+}
